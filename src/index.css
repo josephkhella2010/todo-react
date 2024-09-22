@@ -1,0 +1,197 @@
+/* table and tbody */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+h1 {
+    color: aliceblue;
+    text-shadow: 0px 10px 10px rgb(0, 180, 252);
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.input-container {
+    background-color: rgba(0, 162, 255, 0.534);
+    box-shadow: 0px 0px 10px rgba(0, 162, 255, 0.756), 0px 0px 20px rgba(0, 162, 255, 0.756);
+    min-height: 250px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.input-container input {
+    height: 40px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    padding: 5px;
+    width: 85%;
+    width: 90%;
+    height: 100%;
+    padding: 10px;
+    outline: none;
+    border: 0px;
+    font-size: 1.3rem;
+    font-family: cursive;
+    box-shadow: 0px 0px 5px, 0px 0px 10px;
+}
+
+.input-container button {
+    height: 55px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    background-color: brown;
+    color: white;
+    font-weight: bolder;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 0px 0px 5px brown, 0px 0px 10px brown;
+    border: 0px
+}
+
+.table,
+.tbody {
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    min-height: 90px;
+    margin: 10px 0px;
+    padding: 0px 10px;
+    background: rgba(0, 139, 253, 0.253);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: white;
+    box-shadow: 0px 0px 5px 2px rgba(251, 251, 251, 0.541);
+}
+
+.thead,
+.td {
+    width: 20%;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    text-align: center;
+    padding: 5px;
+    word-break: break-all;
+    border: 1px solid black;
+    margin: 10px 0px;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    letter-spacing: 0.9px;
+    box-shadow: 0px 0px 5px 2px rgba(251, 251, 251, 0.541);
+    text-transform: capitalize;
+}
+
+.thead:nth-of-type(1),
+.td:nth-of-type(1) {
+    background-color: rgba(84, 248, 2, 0.507);
+    width: 10%;
+}
+
+.thead:nth-of-type(4),
+.td:nth-of-type(4) {
+    padding: 5px;
+    display: flex;
+    gap: 20px
+}
+
+.td:nth-of-type(4) button {
+    width: 40%;
+    height: 70%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    letter-spacing: 0.9px;
+    box-shadow: 0px 0px 5px 2px rgba(251, 251, 251, 0.541);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.edit-icon,
+.delete-icon {
+    font-size: 1.5rem;
+}
+
+.edit-icon {
+    color: rgb(2, 84, 167);
+}
+
+.delete-icon {
+    color: rgb(169, 5, 5);
+}
+
+.t-body-container {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:815px) {
+    .thead,
+    .td {
+        font-size: 0.6rem;
+    }
+    .thead:nth-of-type(4),
+    .td:nth-of-type(4) {
+        flex-direction: column;
+        gap: 10px
+    }
+    .td:nth-of-type(4) button {
+        width: 80%;
+    }
+}
